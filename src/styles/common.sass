@@ -1,0 +1,190 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr,
+address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var,
+b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot,
+thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, menu, nav,
+section, time, mark, audio, video
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+  border: 0
+  outline: 0
+  font-size: 100%
+
+body
+  font-family: Arial, "ヒラギノ角ゴシック", Hiragino Kaku Gothic ProN, "ヒラギノ角ゴ ProN W3", Hiragino Sans, Roboto, "Droid Sans", YuGothic, "游ゴシック", Meiryo, "メイリオ", Verdana, "ＭＳ Ｐゴシック", sans-serif
+  font-size: 14px
+  font-weight: 300
+  letter-spacing: 0.1em
+  color: #000
+  &.work_modal_mode
+    @media(max-width: 768px)
+      background: #525252
+      transition: .5s all
+
+p,li
+  font-family: Arial, "ヒラギノ角ゴシック", Hiragino Kaku Gothic ProN, "ヒラギノ角ゴ ProN W3", Hiragino Sans, Roboto, "Droid Sans", YuGothic, "游ゴシック", Meiryo, "メイリオ", Verdana, "ＭＳ Ｐゴシック", sans-serif
+  font-size: 14px
+  font-weight: 300
+  letter-spacing: 0.1em
+  color: #000
+
+p, a, li, h1, h2, h3, h4, span
+  color: #000
+
+a
+  display: block
+  color: #000
+  text-decoration: none
+
+h1, h2, h3, h4
+  font-size: 100%
+  font-weight: bold
+  line-height: 100%
+
+ul,ol
+  list-style: none
+
+img
+  -webkit-backface-visibility: hidden
+  backface-visibility: hidden
+  vertical-align: top
+  border: none
+  object-fit: contain
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+input, button, select, textarea
+  -webkit-appearance: none
+
+input
+  &[type="text"], &[type="mail"], &[type="password"]
+    padding: 0
+    border: none
+    border-radius: 0
+    background: none
+    outline: none
+
+button
+  padding: 0
+  border: none
+  background: none
+
+*:focus
+  outline: none
+
+/* reset_end
+
+.none
+  opacity: 0
+
+.pc_co
+  display: block !important
+
+.sp_co
+  display: none !important
+
+@media(max-width: 768px)
+  .pc_co
+    display: none !important
+
+  .sp_co
+    display: block !important
+
+.pc_co_i
+  display: inline !important
+
+.sp_co_i
+  display: none !important
+
+@media(max-width: 768px)
+  .pc_co_i
+    display: none !important
+
+  .sp_co_i
+    display: inline !important
+
+.pc_co_f
+  display: flex !important
+
+.sp_co_f
+  display: none !important
+
+@media(max-width: 768px)
+  .pc_co_f
+    display: none !important
+
+  .sp_co_f
+    display: flex !important
+
+.no_scroll
+  overflow: hidden
+
+// #header
+//   position: fixed
+//   top: 0
+//   z-index: 10
+//   width: 100%
+//   background-color: #333
+//   color: white
+//   text-align: center
+//   padding: 10px 0
+//   nav
+//     margin: 0 50px
+//     ul
+//       display: flex
+//       justify-content: flex-end
+//       li
+//         margin-right: 20px
+//         &:last-child
+//           margin-right: 0px
+//         a
+//           font-weight: bold
+//           line-height: 1
+//           color: #fff
+
+// #footer
+//   margin: 500px auto 0px
+//   background-color: #E8E8E8
+//   color: white
+//   &_inner
+//     margin: 0 auto
+//     padding: 60px 0 20px
+//     width: 860px
+//     p
+//       line-height: 1
+//       color: #333
+//     .link_list
+//       display: flex
+//       &_item
+//         width: calc(100% / 4)
+//         ul
+//           li
+//             &.title
+//               margin-bottom: 10px
+//               font-size: 16px
+//               font-weight: bold
+//             a
+//               font-size: 16px
+//               letter-spacing: 0.01em
+//     .copyright
+//       font-size: 10px
+//       color: #333
+//       text-align: center
+
+#wrapper
+  position: relative
+  overflow: hidden
+  &.overflow_none
+    overflow: unset
+
+.c_component
+  max-width: 800px
+  margin: 0 auto
+  padding: 50px 0
+
+.margin
+  height: 100vh
