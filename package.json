@@ -1,6 +1,7 @@
 {
   "name": "next-gsap-app",
   "version": "0.1.0",
+  "type": "module",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -9,10 +10,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "gsap": "^3.12.5",
     "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18",
-    "sass": "^1.77.1"
+    "sass": "^1.77.1",
+    "scrolly-video": "^0.0.20"
   },
   "devDependencies": {
     "@types/node": "^20",

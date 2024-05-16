@@ -5,9 +5,9 @@ export default function About() {
   return (
     <>
       <Head>
-          <title>BBB英会話スクール | About</title>
+          <title>About | BBB英会話スクール</title>
           <meta name="description" content="BBB英会話スクール" />
-          <meta property="og:title" content="BBB英会話スクール | About" />
+          <meta property="og:title" content="About | BBB英会話スクール" />
           <meta property="og:description" content="BBB英会話スクール" />
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://next-gsap-rho.vercel.app/" />
