@@ -48,7 +48,7 @@ export default function Campaign() {
           <meta property="og:description" content="BBB英会話スクール" />
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://next-gsap-rho.vercel.app/" />
-          <meta property="og:image" content="https://next-gsap-rho.vercel.app/img/common/ogp.jpg" />
+          <meta property="og:image" content="https://next-gsap-rho.vercel.app/img/common/ogp_campaign.jpg" />
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:site" content="@hogehoge" />
       </Head>
