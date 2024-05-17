@@ -6,39 +6,44 @@ import ScrollyVideo from 'scrolly-video/dist/ScrollyVideo.js';
 const ScrollyVideoComponent = ({ containerId, videoSrc }) => {
   const videoContainerRef = useRef(null);
   const videoRef = useRef(null);
+  const playerRef = useRef(null);
+  const scrollyVideoRef = useRef(null);
 
   useEffect(() => {
-    let player;
-    let scrollyVideo;
+    if (!videoSrc) {
+      console.error("Must provide a valid video src to ScrollyVideo");
+      return;
+    }
 
     if (videoRef.current) {
-      player = videojs(videoRef.current, {
+      playerRef.current = videojs(videoRef.current, {
         controls: false,
         autoplay: false,
-        preload: 'auto'
+        preload: 'auto',
       });
 
-      scrollyVideo = new ScrollyVideo({
-        scrollyVideoContainer: containerId,
-        video: player.el_
+      playerRef.current.ready(() => {
+        scrollyVideoRef.current = new ScrollyVideo({
+          scrollyVideoContainer: containerId,
+          video: playerRef.current.el_,
+        });
       });
     }
 
     return () => {
-      if (scrollyVideo) {
-        scrollyVideo.destroy();
+      if (scrollyVideoRef.current) {
+        scrollyVideoRef.current.destroy();
       }
-      if (player) {
-        player.dispose();
+      if (playerRef.current) {
+        playerRef.current.dispose();
       }
     };
   }, [containerId, videoSrc]);
 
   return (
     <div id={containerId} ref={videoContainerRef}>
-      <video ref={videoRef} className="video-js" preload="auto" data-setup='{}'>
+      <video ref={videoRef} className="video-js vjs-default-skin" controls playsInline preload="auto" loop>
         <source src={videoSrc} type="application/x-mpegURL" />
-        <p className="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that<a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
       </video>
     </div>
   );
