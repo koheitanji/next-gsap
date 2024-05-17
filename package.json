@@ -15,7 +15,8 @@
     "react": "^18",
     "react-dom": "^18",
     "sass": "^1.77.1",
-    "scrolly-video": "^0.0.20"
+    "scrolly-video": "^0.0.20",
+    "video.js": "^8.12.0"
   },
   "devDependencies": {
     "@types/node": "^20",
