@@ -107,14 +107,15 @@ export default function Campaign() {
             </div>
             <div className="bg">
               <div className="bg_item bg_01">
-                <ScrollyVideoComponent containerId="scrolly-video_01" videoSrc="https://d11si2sw4uu5pc.cloudfront.net/output/tokyo.m3u8" />
+                <ScrollyVideoComponent containerId="scrolly-video_01" videoSrc="/video/tokyo.mp4" />
               </div>
               <div className="bg_item bg_02">
-                <ScrollyVideoComponent containerId="scrolly-video_02" videoSrc="https://d11si2sw4uu5pc.cloudfront.net/output/osaka.m3u8" />
+                <ScrollyVideoComponent containerId="scrolly-video_02" videoSrc="/video/osaka.mp4" />
               </div>
               <div className="bg_item bg_03">
-                <ScrollyVideoComponent containerId="scrolly-video_03" videoSrc="https://d11si2sw4uu5pc.cloudfront.net/output/kyoto.m3u8" />
+                <ScrollyVideoComponent containerId="scrolly-video_03" videoSrc="/video/kyoto.mp4" />
               </div>
+              {/* <ScrollyVideoComponent containerId="scrolly-video_01" videoSrc="https://d11si2sw4uu5pc.cloudfront.net/output/tokyo.m3u8" /> */}
             </div>
           </div>
         </main>
