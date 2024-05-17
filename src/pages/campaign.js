@@ -6,7 +6,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 
 // const ScrollTrigger = dynamic(() => import('gsap/ScrollTrigger'), { ssr: false });
-const ScrollyVideoComponent = dynamic(() => import('../components/ScrollyVideoComponent'), { ssr: false });
+const ScrollyVideoComponent = dynamic(() => import('../components/ScrollyVideoCdnComponent'), { ssr: false });
 
 export default function Campaign() {
   useEffect(() => {
@@ -115,7 +115,7 @@ export default function Campaign() {
               <div className="bg_item bg_03">
                 <ScrollyVideoComponent containerId="scrolly-video_03" videoSrc="/video/kyoto.mp4" />
               </div>
-              {/* <ScrollyVideoComponent containerId="scrolly-video_01" videoSrc="https://d11si2sw4uu5pc.cloudfront.net/output/tokyo.m3u8" /> */}
+              {/* <ScrollyVideoCdnComponent containerId="scrolly-video_01" videoSrc="https://d11si2sw4uu5pc.cloudfront.net/output/tokyo.m3u8" /> */}
             </div>
           </div>
         </main>
