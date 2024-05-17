@@ -6,7 +6,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 
 // const ScrollTrigger = dynamic(() => import('gsap/ScrollTrigger'), { ssr: false });
-const ScrollyVideoComponent = dynamic(() => import('../components/ScrollyVideoCdnComponent'), { ssr: false });
+const ScrollyVideoComponent = dynamic(() => import('../components/ScrollyVideoComponent'), { ssr: false });
 
 export default function Campaign() {
   useEffect(() => {
