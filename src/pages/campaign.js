@@ -6,7 +6,8 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 
 // const ScrollTrigger = dynamic(() => import('gsap/ScrollTrigger'), { ssr: false });
-const ScrollyVideoComponent = dynamic(() => import('../components/ScrollyVideoComponent'), { ssr: false });
+// const ScrollyVideoComponent = dynamic(() => import('../components/ScrollyVideoComponent'), { ssr: false });
+const ScrollyVideoCdnComponent = dynamic(() => import('../components/ScrollyVideoCdnComponent'), { ssr: false });
 
 export default function Campaign() {
   useEffect(() => {
@@ -106,7 +107,7 @@ export default function Campaign() {
               </div>
             </div>
             <div className="bg">
-              <div className="bg_item bg_01">
+              {/* <div className="bg_item bg_01">
                 <ScrollyVideoComponent containerId="scrolly-video_01" videoSrc="/video/tokyo.mp4" />
               </div>
               <div className="bg_item bg_02">
@@ -114,8 +115,16 @@ export default function Campaign() {
               </div>
               <div className="bg_item bg_03">
                 <ScrollyVideoComponent containerId="scrolly-video_03" videoSrc="/video/kyoto.mp4" />
+              </div> */}
+              <div className="bg_item bg_01">
+                <ScrollyVideoCdnComponent containerId="scrolly-video_01" videoSrc="https://d11si2sw4uu5pc.cloudfront.net/output/tokyo.m3u8" />
               </div>
-              {/* <ScrollyVideoCdnComponent containerId="scrolly-video_01" videoSrc="https://d11si2sw4uu5pc.cloudfront.net/output/tokyo.m3u8" /> */}
+              <div className="bg_item bg_02">
+                <ScrollyVideoCdnComponent containerId="scrolly-video_02" videoSrc="https://d11si2sw4uu5pc.cloudfront.net/output/osaka.m3u8" />
+              </div>
+              <div className="bg_item bg_03">
+                <ScrollyVideoCdnComponent containerId="scrolly-video_03" videoSrc="https://d11si2sw4uu5pc.cloudfront.net/output/kyoto.m3u8" />
+              </div>
             </div>
           </div>
         </main>

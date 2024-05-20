@@ -42,7 +42,7 @@ const ScrollyVideoCdnComponent = ({ containerId, videoSrc }) => {
 
   return (
     <div id={containerId} ref={videoContainerRef}>
-      <video ref={videoRef} className="video-js vjs-default-skin" controls playsInline preload="auto" loop>
+      <video ref={videoRef} className="video-js vjs-default-skin" controls playsInline preload="auto" loop="loop">
         <source src={videoSrc} type="application/x-mpegURL" />
       </video>
     </div>
